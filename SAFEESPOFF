@@ -23,7 +23,7 @@ SAFEESPLabel.Font = Enum.Font.GothamBold
 SAFEESPLabel.FontSize = Enum.FontSize.Size14
 SAFEESPLabel.Text = "SAFE"
 SAFEESPLabel.TextSize = 12
-SAFEESPLabel.TextColor3 = a[i].Color
+SAFEESPLabel.TextColor3 = Color3.fromRGB(51, 0, 0)
 SAFEESPLabel.TextStrokeTransparency = 0
 spawn(function()
 while true do
