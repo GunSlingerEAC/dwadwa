@@ -318,7 +318,6 @@ if input.KeyCode==Enum.KeyCode.Z then
 getgenv().Toggle = true
 getgenv().ValueCheck = true
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/yesok3877/Miscellaneous/master/Universal-No-Recoil'),true))()
-print("No Recoil Activated")
 end
 end)
 
