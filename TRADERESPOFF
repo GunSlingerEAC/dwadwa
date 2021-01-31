@@ -1,0 +1,52 @@
+spawn(function()
+_G.TRADERESP = false
+
+function checkTRADERESP()
+
+local a = workspace.Map.Shops:getDescendants()
+for i=1,#a do
+if a[i].Name == "MainPart" then
+if not a[i]:findFirstChild("Billboard") then
+local Billboard = Instance.new("BillboardGui")
+local TRADERESPLabel = Instance.new("TextLabel")
+Billboard.Parent = a[i]
+Billboard.Active = true
+Billboard.AlwaysOnTop = true
+Billboard.Size = UDim2.new(0, 200, 0, 50)
+Billboard.Adornee = a[i]
+TRADERESPLabel.Parent = Billboard
+TRADERESPLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+TRADERESPLabel.BackgroundTransparency = 1
+TRADERESPLabel.BorderSizePixel = 0
+TRADERESPLabel.Size = UDim2.new(0, 200, 0, 50)
+TRADERESPLabel.Font = Enum.Font.GothamBold
+TRADERESPLabel.FontSize = Enum.FontSize.Size14
+TRADERESPLabel.Text = "TRADER"
+TRADERESPLabel.TextSize = 8
+TRADERESPLabel.TextColor3 = Color3.fromRGB(153 / 153, 255 )
+TRADERESPLabel.TextStrokeTransparency = 0
+spawn(function()
+while true do
+wait(0.1)
+if _G.TRADERESP == true then
+TRADERESPLabel.Visible = true
+else
+TRADERESPLabel.Visible = false
+end
+end
+end)
+end
+end
+end
+end
+
+checkTRADERESP()
+
+workspace.Map.Shops.ChildAdded:connect(function()
+checkTRADERESP()
+end)
+
+workspace.Map.Shops.ChildAdded:connect(function()
+checkTRADERESP()
+end)
+end)
