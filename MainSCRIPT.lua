@@ -251,6 +251,10 @@ SAFEESPOFF.TextColor3 = Color3.fromRGB(0, 0, 0)
 SAFEESPOFF.TextScaled = true
 SAFEESPOFF.TextSize = 14.000
 SAFEESPOFF.TextWrapped = true
+SAFEESPOFF.MouseButton1Down:connect(function()
+print("Success")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GunSlingerEAC/dwadwa/main/SAFEESPOFF", true))()
+end)
 
 SAFEESPON.Name = "SAFE ESP ON"
 SAFEESPON.Parent = LOOT
@@ -264,6 +268,10 @@ SAFEESPON.TextColor3 = Color3.fromRGB(0, 0, 0)
 SAFEESPON.TextScaled = true
 SAFEESPON.TextSize = 14.000
 SAFEESPON.TextWrapped = true
+SAFEESPON.MouseButton1Down:connect(function()
+print("Success")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GunSlingerEAC/dwadwa/main/SAFEESPON", true))()
+end)
 
 REGISTERESPOFF.Name = "REGISTER ESP OFF"
 REGISTERESPOFF.Parent = LOOT
