@@ -313,8 +313,6 @@ NoRecoilZTOGGLEKEYONCEPRESSEDWHENWEAPONOUT.TextScaled = true
 NoRecoilZTOGGLEKEYONCEPRESSEDWHENWEAPONOUT.TextSize = 14.000
 NoRecoilZTOGGLEKEYONCEPRESSEDWHENWEAPONOUT.TextWrapped = true
 
-end)
-
 -- Scripts:
 
 local function XOZBME_fake_script() -- GUITOGGLE.LocalScript 
