@@ -312,6 +312,10 @@ NoRecoilZTOGGLEKEYONCEPRESSEDWHENWEAPONOUT.TextColor3 = Color3.fromRGB(0, 0, 0)
 NoRecoilZTOGGLEKEYONCEPRESSEDWHENWEAPONOUT.TextScaled = true
 NoRecoilZTOGGLEKEYONCEPRESSEDWHENWEAPONOUT.TextSize = 14.000
 NoRecoilZTOGGLEKEYONCEPRESSEDWHENWEAPONOUT.TextWrapped = true
+NoRecoilZTOGGLEKEYONCEPRESSEDWHENWEAPONOUT.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GunSlingerEAC/dwadwa/main/norecoil35.lua", true))()
+end)
+
 
 -- Scripts:
 
