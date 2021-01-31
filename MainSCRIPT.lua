@@ -70,6 +70,9 @@ ESP.TextColor3 = Color3.fromRGB(0, 0, 0)
 ESP.TextScaled = true
 ESP.TextSize = 14.000
 ESP.TextWrapped = true
+ESP.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/0WgF9U3D", true))()
+end)
 
 Fullbright.Name = "Fullbright"
 Fullbright.Parent = ImageLabel
@@ -83,6 +86,9 @@ Fullbright.TextColor3 = Color3.fromRGB(0, 0, 0)
 Fullbright.TextScaled = true
 Fullbright.TextSize = 14.000
 Fullbright.TextWrapped = true
+Fullbright.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/vbkrQ7Ur", true))()
+end)
 
 Aimbot.Name = "Aimbot"
 Aimbot.Parent = ImageLabel
@@ -96,6 +102,9 @@ Aimbot.TextColor3 = Color3.fromRGB(0, 0, 0)
 Aimbot.TextScaled = true
 Aimbot.TextSize = 14.000
 Aimbot.TextWrapped = true
+Aimbot.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Herrtt/AimHot-v8/master/Main.lua", true))()
+end)
 
 TextLabel.Parent = ImageLabel
 TextLabel.BackgroundColor3 = Color3.fromRGB(0, 243, 255)
@@ -149,6 +158,9 @@ ScrapsESPON.TextColor3 = Color3.fromRGB(0, 0, 0)
 ScrapsESPON.TextScaled = true
 ScrapsESPON.TextSize = 14.000
 ScrapsESPON.TextWrapped = true
+ScrapsESPON.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GunSlingerEAC/dwadwa/main/ScrapESPON.lua", true))()
+end)
 
 ATMESPOFF.Name = "ATM ESP OFF"
 ATMESPOFF.Parent = LOOT
@@ -184,6 +196,9 @@ ScrapsESPOFF.TextColor3 = Color3.fromRGB(0, 0, 0)
 ScrapsESPOFF.TextScaled = true
 ScrapsESPOFF.TextSize = 14.000
 ScrapsESPOFF.TextWrapped = true
+ScrapsESPOFF.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GunSlingerEAC/dwadwa/main/SCRAPESPOFF.lua", true))()
+end)
 
 TRADERESPON.Name = "TRADER ESP ON"
 TRADERESPON.Parent = LOOT
@@ -297,6 +312,15 @@ NoRecoilZTOGGLEKEYONCEPRESSEDWHENWEAPONOUT.TextColor3 = Color3.fromRGB(0, 0, 0)
 NoRecoilZTOGGLEKEYONCEPRESSEDWHENWEAPONOUT.TextScaled = true
 NoRecoilZTOGGLEKEYONCEPRESSEDWHENWEAPONOUT.TextSize = 14.000
 NoRecoilZTOGGLEKEYONCEPRESSEDWHENWEAPONOUT.TextWrapped = true
+NoRecoilZTOGGLEKEYONCEPRESSEDWHENWEAPONOUT.MouseButton1Down:connect(function()
+game:GetService("UserInputService").InputBegan:connect(function (input)
+if input.KeyCode==Enum.KeyCode.Z then
+getgenv().Toggle = true
+getgenv().ValueCheck = true
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/yesok3877/Miscellaneous/master/Universal-No-Recoil'),true))()
+print("No Recoil Activated")
+end
+end)
 
 -- Scripts:
 
