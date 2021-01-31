@@ -225,6 +225,10 @@ TRADERESPON.TextColor3 = Color3.fromRGB(0, 0, 0)
 TRADERESPON.TextScaled = true
 TRADERESPON.TextSize = 14.000
 TRADERESPON.TextWrapped = true
+TRADERESPON.MouseButton1Down:connect(function()
+print("Success")		
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GunSlingerEAC/dwadwa/main/TRADERESPON", true))()
+end)
 
 TRADERESPOFF.Name = "TRADER ESP OFF"
 TRADERESPOFF.Parent = LOOT
@@ -238,6 +242,10 @@ TRADERESPOFF.TextColor3 = Color3.fromRGB(0, 0, 0)
 TRADERESPOFF.TextScaled = true
 TRADERESPOFF.TextSize = 14.000
 TRADERESPOFF.TextWrapped = true
+TRADERESPOFF.MouseButton1Down:connect(function()
+print("Success")		
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GunSlingerEAC/dwadwa/main/TRADERESPOFF", true))()
+end)
 
 SAFEESPOFF.Name = "SAFE ESP OFF"
 SAFEESPOFF.Parent = LOOT
