@@ -5,7 +5,7 @@ function checkATMESP()
 
 local a = workspace.Map.ATMs:getDescendants()
 for i=1,#a do
-if a[i].Name == "nil" then
+if a[i].Name == "MainPart" then
 if not a[i]:findFirstChild("BillboardGui") then
 local BillboardGui = Instance.new("BillboardGui")
 local ATMESPLabel = Instance.new("TextLabel")
