@@ -1,0 +1,52 @@
+spawn(function()
+_G.SAFEESP = true
+
+function checkSAFEESP()
+
+local a = workspace.Map.CashRegisters:getDescendants()
+for i=1,#a do
+if a[i].Name == "MainPart" then
+if not a[i]:findFirstChild("Billboard") then
+local Billboard = Instance.new("BillboardGui")
+local SAFEESPLabel = Instance.new("TextLabel")
+Billboard.Parent = a[i]
+Billboard.Active = true
+Billboard.AlwaysOnTop = true
+Billboard.Size = UDim2.new(0, 200, 0, 50)
+Billboard.Adornee = a[i]
+SAFEESPLabel.Parent = Billboard
+SAFEESPLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+SAFEESPLabel.BackgroundTransparency = 1
+SAFEESPLabel.BorderSizePixel = 0
+SAFEESPLabel.Size = UDim2.new(0, 200, 0, 50)
+SAFEESPLabel.Font = Enum.Font.GothamBold
+SAFEESPLabel.FontSize = Enum.FontSize.Size14
+SAFEESPLabel.Text = "SAFE"
+SAFEESPLabel.TextSize = 12
+SAFEESPLabel.TextColor3 = a[i].Color
+SAFEESPLabel.TextStrokeTransparency = 0
+spawn(function()
+while true do
+wait(0.1)
+if _G.SAFEESP == true then
+SAFEESPLabel.Visible = true
+else
+SAFEESPLabel.Visible = false
+end
+end
+end)
+end
+end
+end
+end
+
+checkSAFEESP()
+
+workspace.Map.CashRegisters.ChildAdded:connect(function()
+checkSAFEESP()
+end)
+
+workspace.Map.CashRegisters.ChildAdded:connect(function()
+checkSAFEESP()
+end)
+end)
