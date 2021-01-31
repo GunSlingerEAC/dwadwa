@@ -71,6 +71,7 @@ ESP.TextScaled = true
 ESP.TextSize = 14.000
 ESP.TextWrapped = true
 ESP.MouseButton1Down:connect(function()
+print("Success")
 loadstring(game:HttpGet("https://pastebin.com/raw/0WgF9U3D", true))()
 end)
 
@@ -87,6 +88,7 @@ Fullbright.TextScaled = true
 Fullbright.TextSize = 14.000
 Fullbright.TextWrapped = true
 Fullbright.MouseButton1Down:connect(function()
+print("Success")
 loadstring(game:HttpGet("https://pastebin.com/raw/vbkrQ7Ur", true))()
 end)
 
@@ -103,6 +105,7 @@ Aimbot.TextScaled = true
 Aimbot.TextSize = 14.000
 Aimbot.TextWrapped = true
 Aimbot.MouseButton1Down:connect(function()
+print("Success")
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Herrtt/AimHot-v8/master/Main.lua", true))()
 end)
 
@@ -159,6 +162,7 @@ ScrapsESPON.TextScaled = true
 ScrapsESPON.TextSize = 14.000
 ScrapsESPON.TextWrapped = true
 ScrapsESPON.MouseButton1Down:connect(function()
+print("Success")
 loadstring(game:HttpGet("https://raw.githubusercontent.com/GunSlingerEAC/dwadwa/main/ScrapESPON.lua", true))()
 end)
 
@@ -197,6 +201,7 @@ ScrapsESPOFF.TextScaled = true
 ScrapsESPOFF.TextSize = 14.000
 ScrapsESPOFF.TextWrapped = true
 ScrapsESPOFF.MouseButton1Down:connect(function()
+print("Success")		
 loadstring(game:HttpGet("https://raw.githubusercontent.com/GunSlingerEAC/dwadwa/main/SCRAPESPOFF.lua", true))()
 end)
 
