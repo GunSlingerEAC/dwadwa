@@ -3,9 +3,9 @@ _G.ATMESP = true
 
 function checkATMESP()
 
-local a = workspace.Filter.SpawnedScraps:getDescendants()
+local a = workspace.Map.ATMs:getDescendants()
 for i=1,#a do
-if a[i].Name == "MeshPart" then
+if a[i].Name == "nil" then
 if not a[i]:findFirstChild("BillboardGui") then
 local BillboardGui = Instance.new("BillboardGui")
 local ATMESPLabel = Instance.new("TextLabel")
@@ -42,11 +42,11 @@ end
 
 checkATMESP()
 
-workspace.Filter.SpawnedScraps.ChildAdded:connect(function()
+workspace.Map.ATMs.ChildAdded:connect(function()
 checkATMESP()
 end)
 
-workspace.Filter.SpawnedScraps.ChildAdded:connect(function()
+workspace.Map.ATMs.ChildAdded:connect(function()
 checkATMESP()
 end)
 end)
