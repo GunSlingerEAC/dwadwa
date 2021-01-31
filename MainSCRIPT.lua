@@ -148,6 +148,10 @@ ATMESPON.TextColor3 = Color3.fromRGB(0, 0, 0)
 ATMESPON.TextScaled = true
 ATMESPON.TextSize = 14.000
 ATMESPON.TextWrapped = true
+ATMESPON.MouseButton1Down:connect(function()
+print("Success")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GunSlingerEAC/dwadwa/main/ATMESPON", true))()
+end)
 
 ScrapsESPON.Name = "Scraps ESP ON"
 ScrapsESPON.Parent = LOOT
@@ -177,6 +181,10 @@ ATMESPOFF.TextColor3 = Color3.fromRGB(0, 0, 0)
 ATMESPOFF.TextScaled = true
 ATMESPOFF.TextSize = 14.000
 ATMESPOFF.TextWrapped = true
+ATMESPOFF.MouseButton1Down:connect(function()
+print("Success")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GunSlingerEAC/dwadwa/main/ATMESPOFF", true))()
+end)
 
 TextLabel_3.Parent = LOOT
 TextLabel_3.BackgroundColor3 = Color3.fromRGB(85, 85, 0)
