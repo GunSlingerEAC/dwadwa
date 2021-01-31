@@ -1,0 +1,52 @@
+spawn(function()
+_G.ATMESP = false
+
+function checkATMESP()
+
+local a = workspace.Map.ATMs:getDescendants()
+for i=1,#a do
+if a[i].Name == "MainPart" then
+if not a[i]:findFirstChild("BillboardGui") then
+local BillboardGui = Instance.new("BillboardGui")
+local ATMESPLabel = Instance.new("TextLabel")
+BillboardGui.Parent = a[i]
+BillboardGui.Active = true
+BillboardGui.AlwaysOnTop = true
+BillboardGui.Size = UDim2.new(0, 200, 0, 50)
+BillboardGui.Adornee = a[i]
+ATMESPLabel.Parent = BillboardGui
+ATMESPLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+ATMESPLabel.BackgroundTransparency = 1
+ATMESPLabel.BorderSizePixel = 0
+ATMESPLabel.Size = UDim2.new(0, 200, 0, 50)
+ATMESPLabel.Font = Enum.Font.GothamBold
+ATMESPLabel.FontSize = Enum.FontSize.Size14
+ATMESPLabel.Text = "ATM"
+ATMESPLabel.TextSize = 12
+ATMESPLabel.TextColor3 = a[i].Color
+ATMESPLabel.TextStrokeTransparency = 0
+spawn(function()
+while true do
+wait(0.1)
+if _G.ATMESP == true then
+ATMESPLabel.Visible = true
+else
+ATMESPLabel.Visible = false
+end
+end
+end)
+end
+end
+end
+end
+
+checkATMESP()
+
+workspace.Map.ATMs.ChildAdded:connect(function()
+checkATMESP()
+end)
+
+workspace.Map.ATMs.ChildAdded:connect(function()
+checkATMESP()
+end)
+end)
