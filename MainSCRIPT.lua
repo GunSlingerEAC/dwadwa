@@ -71,8 +71,26 @@ ESP.TextScaled = true
 ESP.TextSize = 14.000
 ESP.TextWrapped = true
 ESP.MouseButton1Down:connect(function()
+shared.Visuals = { --// Configuration (Will load default settings if shared.Visuals doesn't exist.)
+    Enabled = true,
+    CrosshairEnabled = false,
+    Boxes = true,
+    Healthbar = true,
+    Tracers = false,
+    Info = true,
+    ShowAllyTeam = true,
+    UseTeamColor = true,
+    AllyColor = Color3.fromRGB(0, 255, 0),
+    EnemyColor = Color3.fromRGB(255, 0, 0),
+    Crosshair = {
+        Size = 5,
+        Thickness = 1.5,
+        Offset = 5
+    }
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/coastss/releases/main/universal_visuals.lua"))()
 print("Success")
-loadstring(game:HttpGet("https://pastebin.com/raw/0WgF9U3D", true))()
 end)
 
 Fullbright.Name = "Fullbright"
@@ -281,18 +299,22 @@ print("Success")
 loadstring(game:HttpGet("https://raw.githubusercontent.com/GunSlingerEAC/dwadwa/main/SAFEESPON", true))()
 end)
 
-REGISTERESPOFF.Name = "REGISTER ESP OFF"
+REGISTERESPOFF.Name = "OLD PLAYER ESP"
 REGISTERESPOFF.Parent = LOOT
 REGISTERESPOFF.Active = false
 REGISTERESPOFF.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
 REGISTERESPOFF.Position = UDim2.new(0.507015944, 0, 0.707197845, 0)
 REGISTERESPOFF.Size = UDim2.new(0, 87, 0, 31)
 REGISTERESPOFF.Font = Enum.Font.SourceSans
-REGISTERESPOFF.Text = "NULL"
+REGISTERESPOFF.Text = "OLD PLAYER ESP"
 REGISTERESPOFF.TextColor3 = Color3.fromRGB(0, 0, 0)
 REGISTERESPOFF.TextScaled = true
 REGISTERESPOFF.TextSize = 14.000
 REGISTERESPOFF.TextWrapped = true
+REGISTERESPOFF.MouseButton1Down:connect(function()
+print("Success")
+loadstring(game:HttpGet("https://pastebin.com/raw/0WgF9U3D", true))()
+end)
 
 REGISTERESPON.Name = "REGISTER ESP ON"
 REGISTERESPON.Parent = LOOT
