@@ -65,7 +65,7 @@ ESP.BackgroundColor3 = Color3.fromRGB(35, 255, 1)
 ESP.Position = UDim2.new(0, 0, 0.120041877, 0)
 ESP.Size = UDim2.new(0, 137, 0, 41)
 ESP.Font = Enum.Font.SourceSans
-ESP.Text = "NEW PLAYER ESP"
+ESP.Text = "Default PlayerESP"
 ESP.TextColor3 = Color3.fromRGB(0, 0, 0)
 ESP.TextScaled = true
 ESP.TextSize = 14.000
@@ -110,7 +110,7 @@ print("Success")
 loadstring(game:HttpGet("https://pastebin.com/raw/vbkrQ7Ur", true))()
 end)
 
-Aimbot.Name = "Aimbot"
+Aimbot.Name = "Aimbot/BOX ESP"
 Aimbot.Parent = ImageLabel
 Aimbot.Active = false
 Aimbot.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
